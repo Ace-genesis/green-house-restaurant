@@ -1,0 +1,372 @@
+:root{
+
+    /* ===== Brand ===== */
+
+    --primary-color: #2E8B57;
+    --primary-hover: #267349;
+
+    --accent-color: #F59E0B;
+    --accent-hover: #FBBF24;
+
+    /* ===== Backgrounds ===== */
+
+    --background-color: #FFFFFF;
+    --surface-color: #F8F9FA;
+    --card-color: #FFFFFF;
+
+    /* ===== Text ===== */
+
+    --text-primary: #1F2937;
+    --text-secondary: #6B7280;
+    --text-light: #FFFFFF;
+
+    /* ===== Borders ===== */
+
+    --border-color: #E5E7EB;
+
+    /* ===== Shadows ===== */
+
+    --shadow-sm: 0 2px 8px rgba(0,0,0,.08);
+    --shadow-md: 0 6px 20px rgba(0,0,0,.12);
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse{
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.2);
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /*outline: 1px solid black;*/
+}
+
+/* ==== HEADER ==== */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-bar{
+    background-color: var(--primary-color);
+    
+    display: flex;
+    padding: 0.5rem 3rem;
+}
+
+.nav-bar div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-bar div h3{
+    font-size: 1.5rem;
+}
+
+#green-house-logo{
+    height: 40px;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    flex-grow: 3;
+}
+
+.nav-bar ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+
+}
+
+.nav-bar ul li a{
+    display: block;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-bar ul li a:hover{
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: 1px solid var(--accent-hover);
+    border-radius: 50px;
+}
+
+.nav-bar ul li a:active{
+    transform: scale(0.9);
+}
+
+.order-now{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-grow: 1;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+
+/*  ==== HERO SECTION ==== */
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.hero-section{
+    background-image: url(images/Hero\ image.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.hero-container h1{
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -1px;
+    animation: fadeUp .8s ease-in-out backwards;    
+
+}
+.hero-container p{
+    color: var(--text-light);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    animation: fadeUp .8s ease-in-out .2s backwards;
+}
+
+.hero-container button{
+    background-color: var(--accent-color);
+    font-size: 1.3rem;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    width: 200px;
+    transition: background-color 0.3s ease;
+    animation: fadeUp .8s ease-in-out .4s backwards;
+}
+.hero-container button:hover{
+    background-color: var(--accent-hover);
+    cursor: pointer;
+}
+
+.hero-container button:active{
+    transform: scale(0.9);
+}
+
+
+/* ==== MEALS ==== */
+.meals{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.card{
+    background-color: var(--card-color);
+    border: 3px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    transition: transform .3s ease, box-shadow .3s ease;
+    
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+}
+
+.badge{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: crimson;
+    color: white;
+    padding: .3rem .7rem;
+    border-radius: 999px;
+    font-size: .75rem;
+    font-weight: bold;
+    animation: pulse 1s ease-in-out 0s infinite alternate;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex-grow: 1;
+}
+
+.card-container h3{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.card-container p{
+    font-size: .8rem;
+}
+
+.card footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.card footer p{
+    flex-grow: 1;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.card button{
+    padding: .5rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    font-weight: 800;
+    transition: background-color 0.3s ease,
+    transform .1s ease;
+}
+
+.card button:hover{
+    background-color: var(--accent-hover);
+    cursor: pointer;
+}
+
+.card button:active{
+    transform: scale(0.9);
+}
+
+/* === RESPONSIVE DESIGN ===*/
+@media (max-width: 768px){
+    .hero-container h1{
+        font-size: 2.5rem;
+    }
+
+    .hero-section{
+        padding: 2rem;
+    }
+
+    .nav-bar{
+        padding: 0.5rem 2rem;
+    }
+
+    .nav-bar ul{
+        display: none;
+    }
+
+    .order-now{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0 1rem;
+    }
+
+    .menu-toggle span{
+        width: 35px;
+        height: 3px;
+        background-color: var(--text-primary);
+        border-radius: 999px;
+    }
+
+    .menu-deactive{
+        display: none;
+    }
+
+    .menu-active{
+        background: none;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 1rem;
+        cursor: pointer;
+    }
+
+    .menu-active span{
+        width: 35px;
+        height: 3px;
+        background-color: var(--text-primary);
+        border-radius: 999px;
+    }
+
+    .span-first{
+        transform: rotate(45deg);
+    }
+
+    .span-second{
+        transform: rotate(-45deg) translateY(-3px);
+
+    }
+
+    .nav-bar div{
+        flex-grow: 1;
+    }
+}
+
+/* ===== ANIMATION ===== */
+
