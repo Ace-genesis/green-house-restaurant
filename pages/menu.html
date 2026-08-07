@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <link rel="stylesheet" href="/css/homepage.css">
+    
+    <link rel="stylesheet" href="/css/menu.css">
 
     <link rel="stylesheet" href="/css/responsive.css">
 
@@ -27,7 +29,583 @@
 
     <main>
 
-    </main>
+    <!-- ================= MENU HERO ================= -->
+
+    <section class="menu-hero">
+
+        <div class="menu-hero-content">
+
+            <span class="section-tag">
+                Our Menu
+            </span>
+
+            <h1>
+                Discover Delicious Meals
+            </h1>
+
+            <p>
+                From traditional Nigerian favourites to continental delights,
+                every meal is freshly prepared using quality ingredients.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="menu-search">
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search for a meal...">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FILTER ================= -->
+
+    <section class="menu-filter">
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="rice">
+                Rice
+            </button>
+
+            <button class="filter-btn" data-filter="soups">
+                Soups
+            </button>
+
+            <button class="filter-btn" data-filter="swallow">
+                Swallow
+            </button>
+
+            <button class="filter-btn" data-filter="drinks">
+                Drinks
+            </button>
+
+            <button class="filter-btn" data-filter="desserts">
+                Desserts
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CHEF SPECIAL ================= -->
+
+    <section class="chef-special">
+
+        <div class="special-image">
+
+            <img
+                src="images/chef-special.jpg"
+                alt="Chef Special">
+
+        </div>
+
+        <div class="special-content">
+
+            <span class="section-tag">
+
+                Chef's Recommendation
+
+            </span>
+
+            <h2>
+
+                Seafood Fried Rice
+
+            </h2>
+
+            <p>
+
+                Loaded with prawns, calamari, vegetables and premium spices,
+                this signature dish is one of our customers' favourites.
+
+            </p>
+
+            <h3>
+
+                ₦6,500
+
+            </h3>
+
+            <button class="hero-order-btn">
+
+                Order Now
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= MENU ITEMS ================= -->
+
+    <section class="menu-items">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+
+                Freshly Prepared
+
+            </span>
+
+            <h2>
+
+                Explore Our Menu
+
+            </h2>
+
+            <p>
+
+                Choose from our carefully prepared dishes.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="menu-grid">
+
+
+
+            <!-- Rice -->
+
+            <article class="menu-card" data-category="rice">
+
+                <img src="images/jollof rice.jpg" alt="Jollof Rice">
+
+                <div class="menu-card-content">
+
+                    <h3>Smoky Jollof Rice</h3>
+
+                    <p>
+                        Served with grilled chicken and fried plantain.
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>₦3,500</span>
+
+                        <button>
+                            Order
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="menu-card" data-category="rice">
+
+                <img src="images/fried rice.jpg" alt="Fried Rice">
+
+                <div class="menu-card-content">
+
+                    <h3>Fried Rice</h3>
+
+                    <p>
+                        Vegetable fried rice served with crispy chicken.
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>₦3,500</span>
+
+                        <button>
+
+                            Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Soups -->
+
+            <article class="menu-card" data-category="soups">
+
+                <img src="images/egusi soup.jpg" alt="Egusi Soup">
+
+                <div class="menu-card-content">
+
+                    <h3>Egusi Soup</h3>
+
+                    <p>
+
+                        Rich melon soup with assorted meat.
+
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>
+
+                            ₦4,500
+
+                        </span>
+
+                        <button>
+
+                            Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="menu-card" data-category="soups">
+
+                <img src="images/afang soup.jpg" alt="Afang Soup">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Afang Soup
+
+                    </h3>
+
+                    <p>
+
+                        Traditional vegetable soup with seafood.
+
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>
+
+                            ₦5,000
+
+                        </span>
+
+                        <button>
+
+                            Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Swallow -->
+
+            <article class="menu-card" data-category="swallow">
+
+                <img src="images/eba.jpg" alt="Eba">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Eba & Soup
+
+                    </h3>
+
+                    <p>
+
+                        Soft garri served with your preferred soup.
+
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>
+
+                            ₦2,500
+
+                        </span>
+
+                        <button>
+
+                            Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="menu-card" data-category="swallow">
+
+                <img src="images/pounded yam.jpg" alt="Pounded Yam">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Pounded Yam
+
+                    </h3>
+
+                    <p>
+
+                        Freshly pounded yam served with soup.
+
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>
+
+                            ₦3,000
+
+                        </span>
+
+                        <button>
+
+                            Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Drinks -->
+
+            <article class="menu-card" data-category="drinks">
+
+                <img src="images/orange juice.jpg" alt="Orange Juice">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Fresh Orange Juice
+
+                    </h3>
+
+                    <p>
+
+                        Freshly squeezed oranges.
+
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>
+
+                            ₦1,500
+
+                        </span>
+
+                        <button>
+
+                            Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="menu-card" data-category="drinks">
+
+                <img src="images/milkshake.jpg" alt="Milkshake">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Chocolate Milkshake
+
+                    </h3>
+
+                    <p>
+
+                        Thick creamy milkshake.
+
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>
+
+                            ₦2,000
+
+                        </span>
+
+                        <button>
+
+                            Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Desserts -->
+
+            <article class="menu-card" data-category="desserts">
+
+                <img src="images/ice cream.jpg" alt="Ice Cream">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Vanilla Ice Cream
+
+                    </h3>
+
+                    <p>
+
+                        Creamy vanilla ice cream.
+
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>
+
+                            ₦1,800
+
+                        </span>
+
+                        <button>
+
+                            Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="menu-card" data-category="desserts">
+
+                <img src="images/chocolate cake.jpg" alt="Chocolate Cake">
+
+                <div class="menu-card-content">
+
+                    <h3>
+
+                        Chocolate Cake
+
+                    </h3>
+
+                    <p>
+
+                        Rich chocolate layered cake.
+
+                    </p>
+
+                    <div class="menu-card-footer">
+
+                        <span>
+
+                            ₦2,500
+
+                        </span>
+
+                        <button>
+
+                            Order
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="menu-cta">
+
+        <h2>
+
+            Didn't Find What You Wanted?
+
+        </h2>
+
+        <p>
+
+            Contact us for custom orders, event catering,
+            or special meal requests.
+
+        </p>
+
+        <a href="contact.html" class="cta-btn">
+
+            Contact Us
+
+        </a>
+
+    </section>
+
+</main>
 
     <footer class="reusable-footer">
 

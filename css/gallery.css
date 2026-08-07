@@ -1,0 +1,303 @@
+/* ==========================================
+   GALLERY HERO
+========================================== */
+
+.gallery-hero{
+
+    min-height:55vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:6rem 6%;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.45)),
+    url("../images/gallery/gallery-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:var(--white);
+
+}
+
+.gallery-hero-content{
+
+    max-width:700px;
+
+}
+
+.gallery-hero h1{
+
+    font-size:clamp(2.8rem,6vw,4.5rem);
+
+    margin:1rem 0;
+
+}
+
+.gallery-hero p{
+
+    color:rgba(255,255,255,.9);
+
+}
+
+
+/* ==========================================
+   GALLERY FILTER
+========================================== */
+
+.gallery-filter{
+
+    padding:3rem 6%;
+
+}
+
+.gallery-filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:1rem;
+
+}
+
+.gallery-filter-btn{
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+    padding:.9rem 1.6rem;
+
+    border-radius:999px;
+
+    transition:var(--transition);
+
+}
+
+.gallery-filter-btn:hover,
+.gallery-filter-btn.active{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+}
+
+
+
+/* ==========================================
+   GALLERY GRID
+========================================== */
+
+.gallery-section{
+
+    padding-top:2rem;
+
+}
+
+.gallery-grid{
+
+    width:min(1200px,100%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:2rem;
+
+}
+
+.gallery-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    box-shadow:var(--shadow);
+
+}
+
+.gallery-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+    transition:.5s ease;
+
+}
+
+.gallery-card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+
+    transition:var(--transition);
+
+}
+
+.gallery-card:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+.gallery-overlay h3{
+
+    color:var(--white);
+
+    text-align:center;
+
+    padding:0 1rem;
+
+    font-size:1.5rem;
+
+}
+
+
+
+/* ==========================================
+   CUSTOMER MEMORIES
+========================================== */
+
+.gallery-memories{
+
+    background:var(--background);
+
+}
+
+.memory-container{
+
+    width:min(1200px,100%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:2rem;
+
+}
+
+.memory-card{
+
+    background:var(--white);
+
+    padding:2.5rem;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.memory-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.memory-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:1rem;
+
+}
+
+.memory-card p{
+
+    color:var(--text-light);
+
+}
+
+
+
+/* ==========================================
+   GALLERY CTA
+========================================== */
+
+.gallery-cta{
+
+    width:min(1200px,92%);
+
+    margin:6rem auto;
+
+    padding:5rem 2rem;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    color:var(--white);
+
+    background:
+    linear-gradient(rgba(46,139,87,.95),
+    rgba(34,107,67,.95));
+
+}
+
+.gallery-cta h2{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    margin-bottom:1rem;
+
+}
+
+.gallery-cta p{
+
+    max-width:650px;
+
+    margin:0 auto 2rem;
+
+}
+
+
+

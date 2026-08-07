@@ -1,3 +1,50 @@
+
+@media (max-width: 992px) {
+
+    .reservation-section{
+
+        grid-template-columns:1fr;
+
+        gap:3rem;
+
+    }
+
+    .reservation-info{
+
+        text-align:center;
+
+    }
+
+    .reservation-details{
+
+        max-width:650px;
+
+        width:100%;
+
+        margin:2rem auto 0;
+
+    }
+    
+    
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,minmax(0,1fr));
+
+    }
+    
+    .contact-section{
+
+        grid-template-columns:1fr;
+
+        gap:3rem;
+
+    }
+
+}
+
+
+
+
 @media(max-width:768px){
 
     section{
@@ -9,6 +56,7 @@
     .nav-bar{
 
         min-height:70px;
+        
 
     }
 
@@ -27,6 +75,7 @@
     .nav-list-items{
 
         position:fixed;
+        display: none;
 
         top:70px;
         right:-100%;
@@ -50,6 +99,8 @@
     }
 
     .nav-list-items.active{
+    
+       display: flex;
 
         right:0;
 
@@ -142,6 +193,413 @@
         align-items:center;
 
     }
+    
+    .menu-hero{
 
+        min-height:45vh;
+
+    }
+
+    .chef-special{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .special-image{
+
+        order:1;
+
+    }
+
+    .special-content{
+
+        order:2;
+
+    }
+
+    .menu-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .filter-buttons{
+
+        justify-content:flex-start;
+
+        overflow-x:auto;
+
+        flex-wrap:nowrap;
+
+        padding-bottom:.5rem;
+
+    }
+    
+    .our-story{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .story-image{
+
+        order:1;
+
+    }
+
+    .story-content{
+
+        order:2;
+
+    }
+
+    .mission-vision{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .values-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .team-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .statistics{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+    
+    
+    /* ==========================================
+   RESERVATION RESPONSIVE
+========================================== */
+
+    
+    
+    .reservation-hero{
+
+        min-height:45vh;
+
+        padding:5rem 1.5rem;
+
+    }
+
+    .reservation-hero h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .reservation-section{
+
+        width:92%;
+
+        margin:4rem auto;
+
+    }
+
+    .reservation-form-container{
+
+        padding:2rem;
+
+    }
+
+    .reservation-form{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .hours-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .policy-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .reservation-cta{
+
+        width:92%;
+
+        padding:4rem 2rem;
+
+        margin:4rem auto;
+
+    }
+    
+    
+    
+    
+    .gallery-hero{
+
+        min-height:45vh;
+
+        padding:5rem 1.5rem;
+
+    }
+
+    .gallery-hero h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .gallery-filter-buttons{
+
+        justify-content:flex-start;
+
+        flex-wrap:nowrap;
+
+        overflow-x:auto;
+
+        padding-bottom:.5rem;
+
+        scrollbar-width:none;
+
+    }
+
+    .gallery-filter-buttons::-webkit-scrollbar{
+
+        display:none;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-card img{
+
+        height:250px;
+
+    }
+
+    .memory-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-cta{
+
+        width:92%;
+
+        margin:4rem auto;
+
+        padding:4rem 2rem;
+
+    }
+    
+    
+    
+    .contact-hero{
+
+        min-height:45vh;
+
+        padding:5rem 1.5rem;
+
+    }
+
+    .contact-hero h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .contact-section{
+
+        width:100%;
+
+        padding-inline:1.5rem;
+
+        margin:4rem auto;
+
+    }
+
+    .contact-form-container{
+
+        padding:2rem;
+
+    }
+
+    .contact-form{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .faq-question{
+
+        padding:1.25rem;
+
+        text-align:left;
+
+    }
+
+    .map-container iframe{
+
+        height:350px;
+
+    }
+
+    .contact-cta{
+
+        width:92%;
+
+        margin:4rem auto;
+
+        padding:4rem 2rem;
+
+    }
+    
+    .notification{
+
+        left:1rem;
+
+        right:1rem;
+
+        max-width:none;
+
+        min-width:0;
+
+    }
+
+
+}
+
+
+
+@media (max-width: 576px){
+
+    .reservation-hero{
+
+        min-height:40vh;
+
+    }
+
+    .reservation-hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .reservation-info h2{
+
+        font-size:2rem;
+
+    }
+
+    .reservation-form-container{
+
+        padding:1.5rem;
+
+    }
+
+    .detail-box{
+
+        padding:1.2rem;
+
+    }
+
+    .hour-card{
+
+        padding:2rem;
+
+    }
+
+    .policy-card{
+
+        padding:2rem 1.5rem;
+
+    }
+
+    .reservation-cta h2{
+
+        font-size:2rem;
+
+    }
+    
+    
+    .gallery-hero{
+
+        min-height:40vh;
+
+    }
+
+    .gallery-hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .gallery-overlay h3{
+
+        font-size:1.25rem;
+
+    }
+    
+    
+    
+    .contact-hero{
+
+        min-height:40vh;
+
+    }
+
+    .contact-hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .contact-information h2{
+
+        font-size:2rem;
+
+    }
+
+    .contact-form-container{
+
+        padding:1.5rem;
+
+    }
+
+    .contact-card{
+
+        padding:1.2rem;
+
+    }
+
+    .map-container iframe{
+
+        height:280px;
+
+    }
+
+    .contact-cta h2{
+
+        font-size:2rem;
+
+    }
 
 }

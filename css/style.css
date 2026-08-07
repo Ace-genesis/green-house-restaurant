@@ -601,3 +601,65 @@ footer{
     font-size:.9rem;
 
 }
+
+
+
+
+
+/* ==========================================
+   NOTIFICATION
+========================================== */
+
+.notification{
+
+    position:fixed;
+
+    top:2rem;
+
+    right:2rem;
+
+    min-width:280px;
+
+    max-width:350px;
+
+    padding:1rem 1.5rem;
+
+    border-radius:12px;
+
+    color:#fff;
+
+    font-weight:500;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    transform:translateX(120%);
+
+    transition:.35s ease;
+
+    z-index:9999;
+
+}
+
+.notification.show{
+
+    transform:translateX(0);
+
+}
+
+.notification.success{
+
+    background:var(--primary);
+
+}
+
+.notification.error{
+
+    background:#dc2626;
+
+}
+
+@media(max-width:768px){
+
+    
+
+}
