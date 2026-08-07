@@ -6,9 +6,16 @@ The website showcases a fictional restaurant where visitors can browse the menu,
 
 ---
 
+## 📖 Overview
+
+Green House Restaurant is a fictional restaurant website designed to provide users with an engaging online dining experience. The website allows visitors to explore the restaurant's menu, learn about its story and team, reserve tables, browse the gallery, and get in touch through a contact page.
+
+The project demonstrates modern front-end web development practices, including responsive layouts, reusable components, interactive JavaScript functionality, and clean, organized code.
+
+---
+
 ## 📸 Preview
 
-> Replace this with a screenshot after deployment.
 
 ![Green House Restaurant](assets/images/preview.png)
 
@@ -16,13 +23,13 @@ The website showcases a fictional restaurant where visitors can browse the menu,
 
 ## 🚀 Live Demo
 
-**Website:** https://your-netlify-link.netlify.app
+**Website:** https://green-house-restaurant.netlify.app
 
 ---
 
 ## 📂 GitHub Repository
 
-https://github.com/yourusername/green-house-restaurant
+https://github.com/Ace-genesis/green-house-restaurant
 
 ---
 
@@ -55,17 +62,20 @@ https://github.com/yourusername/green-house-restaurant
 
 ---
 
-# 🛠 Technologies Used
+# 🛠️ Built With
 
 - HTML5
 - CSS3
 - JavaScript (ES6 Modules)
 - Google Fonts
 - Font Awesome
+- Google Maps Embed
+- Netlify (Deployment)
+- Git & GitHub
 
 ---
 
-# 📁 Folder Structure
+# 📁 Project Structure
 
 ```text
 green-house-restaurant/
@@ -105,23 +115,6 @@ green-house-restaurant/
 
 ---
 
-# ⚙️ Installation
-
-Clone the repository.
-
-```bash
-git clone https://github.com/yourusername/green-house-restaurant.git
-```
-
-Open the project folder.
-
-```bash
-cd green-house-restaurant
-```
-
-Launch the project using a local development server such as **Live Server** in Visual Studio Code.
-
----
 
 # 🎯 Project Requirements Met
 
@@ -145,24 +138,22 @@ Launch the project using a local development server such as **Live Server** in V
 
 ✅ Online deployment
 
----
-
-# 📖 About
-
-Green House Restaurant is a fictional restaurant website created to demonstrate front-end web development skills, including responsive layouts, reusable components, modern styling, and JavaScript interactivity.
 
 ---
 
 # 👨‍💻 Author
 
-**Ace**
+**Ace Genesis**
 
 Frontend Web Developer
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/Ace-genesis
+
+Email:
+adrielokpalo@gmail.com
 
 ---
 
 # 📜 License
 
-This project was created for educational purposes as part of the AI Web Development Capstone Project.
+This project was created for educational purposes as part of the Web Development Capstone Project.
