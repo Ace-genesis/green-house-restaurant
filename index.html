@@ -3,33 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Green House Restaurant</title>
+
+    <!--ICONS LINK-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- PAGE LINKS -->
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/css/homepage.css">
+
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <!-- FAVICON LINK -->
+
+    <link rel="shortcut icon" href="/assets/icons/Green house logo.png" type="image/x-icon">
+
+    <title>Home | Green House Restaurant</title>
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div>
-                <img src="images/Green house logo.png" alt="green house logo" id="green-house-logo">
-                <h3>Green House</h3>
-            </div>
-            <ul class="nav-list-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <button class="order-btn">
-                <a href="#" class="order-now">Order Now</a>
-            </button>
-            
-            <button class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
+     <header class="header-container"></header>
     <main>
         <section class="hero-section">
             <div class="hero-container">
@@ -41,107 +35,489 @@
                 <p>
                     Good food brings comfort, and that's exactly what we serve. Stop by for freshly cooked local and continental dishes in a clean, relaxing environment designed to make every meal memorable.
                 </p>
-                <button class="hero-order-btn">
-                    Order Now
-                </button>
+                <div class="hero-buttons">
+
+                    <button class="hero-order-btn">
+                        Order Now
+                    </button>
+
+                </div>
             </div>
         </section>
-        <section class="meals">
-            <article class="card">
-                    <img src="images/jollof rice.jpg" alt="">
-                <div class="card-container">
-                    <span class="badge">NEW</span>
-                    <h3>Jollof Rice</h3>
-                    <p>Perfectly seasoned smoky jollof rice simmered in rich blend of tomatoes, peppers and spices</p>
-                </div>
-                <footer>
-                    <p>₦3,500</p>
-                    <button class="meal-order-btn">order</button>
-                </footer>
-            </article>
-            <article class="card">
-                <img src="images/fried rice.jpg" alt="picture of fried rice">
-                <div class="card-container">
-                    <h3>Fried Rice</h3>
-                    <p>Savory fried rice prepared with fresh vegetables and aromatic spices.</p>
-                </div>
-                <footer>
-                    <p>₦3,500</p>
-                    <button class="meal-order-btn">order</button>
-                </footer>
-            </article>
-            <article class="card">
-                <img src="images/white rice.jpg" alt="picture of white rice">
-                <div class="card-container">
-                    <h3>White Rice & Stew</h3>
-                    <p>Fluffy white rice served with our rich homemade tomato stew.</p>
-                </div>
-                <footer>
-                    <p>₦3,000</p>
-                    <button class="meal-order-btn">order</button>
-                </footer>
-            </article>
-            <article class="card">
-                <img src="images/beans and plantain.jpg" alt="picture of beans & plantain">
-                <div class="card-container">
-                    <h3>Beans & Plantain</h3>
-                    <p>Perfectly seasoned smoky jollof rice simmered in rich blend of tomatoes, peppers and spices</p>
-                </div>
-                <footer>
-                    <p>₦2,800</p>
-                    <button class="meal-order-btn">order</button>
-                </footer>
-            </article>
-            <article class="card">
-                <img src="images/jollof spaghetti.jpg" alt="picture of jollof spaghetti">
-                <div class="card-container">
-                    <h3>Jollof Spaghetti</h3>
-                    <p>Spaghetti cooked in a delicious tomato and pepper sauce.</p>
-                </div>
-                
-                <footer>
-                    <p>₦3,200</p>
-                    <button class="meal-order-btn">order</button>
-                </footer>
-            </article>
-            <article class="card">
-                <img src="images/egusi soup.jpg" alt="picture of egusi soup">
-                <div class="card-container">
-                    <h3>Egusi Soup</h3>
-                    <p>Rich melon seed soup served with assorted meat.</p>
-                </div>
-                
-                <footer>
-                    <p>₦4,500</p>
-                    <button class="meal-order-btn">order</button>
-                </footer>
-            </article>
-            <article class="card">
-                <img src="images/ogbono soup.jpg" alt="picture of smoky jollof rice">
-                <div class="card-container">
-                    <h3>Ogbono Soup</h3>
-                    <p>Thick traditional ogbono soup packed with authentic flavors.</p>
-                </div>
-                
-                <footer>
-                    <p>₦4,500</p>
-                    <button class="meal-order-btn">order</button>
-                </footer>
-            </article>
-            <article class="card">
-                <img src="images/afang soup.jpg" alt="picture of afang soup">
-                <div class="card-container">
-                    <h3>Afang Soup</h3>
-                    <p>Fresh vegetable soup cooked with assorted meat and seafood.</p>
-                </div>
-                
-                <footer>
-                    <p>₦5,000</p>
-                    <button class="meal-order-btn">order</button>
-                </footer>
-            </article>
+
+        <section class="featured-meals">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    Our Specialties
+                </span>
+
+                <h2>
+                    Featured Dishes
+                </h2>
+
+                <p>
+                    Carefully prepared with fresh ingredients and rich flavours,
+                    these customer favourites keep people coming back for more.
+                </p>
+
+            </div>
+
+            <div class="meals">
+
+                <!-- Meal 1 -->
+
+                <article class="card">
+
+                    <div class="card-image">
+
+                        <img src="/assets/images/jollof rice.jpg"
+                            alt="Smoky Jollof Rice">
+
+                        <span class="badge">
+                            Best Seller
+                        </span>
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Smoky Jollof Rice
+                        </h3>
+
+                        <p>
+                            Our signature smoky jollof rice served with grilled chicken,
+                            fried plantain and fresh salad.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        <p class="price">
+                            ₦3,500
+                        </p>
+
+                        <button class="meal-order-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Meal 2 -->
+
+                <article class="card">
+
+                    <div class="card-image">
+
+                        <img src="/assets/images/fried rice.jpg"
+                            alt="Fried Rice">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Fried Rice
+                        </h3>
+
+                        <p>
+                            Fluffy fried rice cooked with vegetables and served with
+                            crispy chicken and coleslaw.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        <p class="price">
+                            ₦3,500
+                        </p>
+
+                        <button class="meal-order-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Meal 3 -->
+
+                <article class="card">
+
+                    <div class="card-image">
+
+                        <img src="/assets/images/egusi soup.jpg"
+                            alt="Egusi Soup">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Egusi Soup
+                        </h3>
+
+                        <p>
+                            Rich melon soup cooked with assorted meat and served
+                            with your preferred swallow.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        <p class="price">
+                            ₦4,500
+                        </p>
+
+                        <button class="meal-order-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Meal 4 -->
+
+                <article class="card">
+
+                    <div class="card-image">
+
+                        <img src="/assets/images/afang soup.jpg"
+                            alt="Afang Soup">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Afang Soup
+                        </h3>
+
+                        <p>
+                            Freshly prepared Afang soup packed with vegetables,
+                            seafood and assorted meat.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        <p class="price">
+                            ₦5,000
+                        </p>
+
+                        <button class="meal-order-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Meal 5 -->
+
+                <article class="card">
+
+                    <div class="card-image">
+
+                        <img src="/assets/images/jollof spaghetti.jpg"
+                            alt="Jollof Spaghetti">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Jollof Spaghetti
+                        </h3>
+
+                        <p>
+                            Delicious spaghetti cooked in a rich tomato sauce and
+                            served with grilled turkey.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        <p class="price">
+                            ₦3,200
+                        </p>
+
+                        <button class="meal-order-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- Meal 6 -->
+
+                <article class="card">
+
+                    <div class="card-image">
+
+                        <img src="/assets/images/beans and plantain.jpg"
+                            alt="Beans and Plantain">
+
+                    </div>
+
+                    <div class="card-content">
+
+                        <h3>
+                            Beans & Plantain
+                        </h3>
+
+                        <p>
+                            Soft honey beans served with sweet fried plantain
+                            and grilled fish.
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer">
+
+                        <p class="price">
+                            ₦2,800
+                        </p>
+
+                        <button class="meal-order-btn">
+
+                            Order Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="featured-btn">
+
+                <a href="menu.html" class="view-menu-btn">
+
+                    View Full Menu
+
+                </a>
+
+            </div>
+
         </section>
+
+        <section class="why-us">
+
+            <div class="section-heading">
+
+                <p>Why Green House</p>
+
+                <h2>More Than Just Great Food</h2>
+
+            </div>
+
+            <div class="features">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+
+                    <h3>Fresh Ingredients</h3>
+
+                    <p>
+                        We prepare every meal using carefully selected fresh ingredients.
+                    </p>
+
+                </article>
+
+                <article class="feature-card">
+
+                    <div class="feature-icon"><i class="fa-solid fa-utensils"></i></div>
+
+                    <h3>Expert Chefs</h3>
+
+                    <p>
+                        Our experienced chefs deliver delicious meals every single day.
+                    </p>
+
+                </article>
+
+                <article class="feature-card">
+
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+
+                    <h3>Fast Service</h3>
+
+                    <p>
+                        Enjoy quick service whether dining in or ordering takeaway.
+                    </p>
+
+                </article>
+
+                <article class="feature-card">
+
+                    <div class="feature-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+
+                    <h3>Healthy Choices</h3>
+
+                    <p>
+                        From local favourites to healthy options, we've got something for everyone.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="categories">
+
+            <div class="section-heading">
+
+                <p>Browse</p>
+
+                <h2>Meal Categories</h2>
+
+            </div>
+
+            <div class="category-container">
+
+                <article class="category-card">
+
+                    <img src="/assets/images/rice-category.jpg" alt="Rice Meals">
+
+                    <h3>Rice Dishes</h3>
+
+                </article>
+
+                <article class="category-card">
+
+                    <img src="/assets/images/soup-category.jpg" alt="Soups">
+
+                    <h3>Soups</h3>
+
+                </article>
+
+                <article class="category-card">
+
+                    <img src="/assets/images/drinks-category.jpg" alt="Drinks">
+
+                    <h3>Drinks</h3>
+
+                </article>
+
+                <article class="category-card">
+
+                    <img src="/assets/images/dessert-category.jpg" alt="Desserts">
+
+                    <h3>Desserts</h3>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="testimonials">
+
+            <div class="section-heading">
+
+                <p>Testimonials</p>
+
+                <h2>What Our Customers Say</h2>
+
+            </div>
+
+            <div class="testimonial-container">
+
+                <article class="testimonial">
+
+                    <p>
+
+                        "One of the best restaurants in Port Harcourt.
+                        Their jollof rice is amazing."
+
+                    </p>
+
+                    <h4>- Chinedu A.</h4>
+
+                </article>
+
+                <article class="testimonial">
+
+                    <p>
+
+                        "Excellent customer service and very affordable prices."
+
+                    </p>
+
+                    <h4>- Grace E.</h4>
+
+                </article>
+
+                <article class="testimonial">
+
+                    <p>
+
+                        "Clean environment, delicious meals, and fast delivery."
+
+                    </p>
+
+                    <h4>- Daniel O.</h4>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="cta">
+
+            <h2>
+                Ready For Your Next Delicious Meal?
+            </h2>
+
+            <p>
+
+                Visit us today or place your order online and enjoy
+                freshly prepared meals made with care.
+
+            </p>
+
+            <a href="reservation.html" class="cta-btn">
+
+                Reserve a Table
+
+            </a>
+
+        </section>
+
+        <footer class="reusable-footer">
+
+            
+
+        </footer>
+
     </main>
-    <script src="script.js"></script>
+
+    <script type="module" src="/js/script.js"></script>
 </body>
 </html>

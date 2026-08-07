@@ -1,0 +1,628 @@
+/* ==========================================
+   03. HERO SECTION
+========================================== */
+
+.hero-section{
+
+    min-height:90vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 6%;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.65),
+            rgba(0,0,0,.45)
+        ),
+        url("/assets/images/Hero image.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+}
+
+
+.hero-container{
+
+    max-width:650px;
+
+    color:var(--white);
+
+}
+
+.hero-container h1{
+
+    font-size:clamp(3rem,6vw,5rem);
+
+    line-height:1.1;
+
+    font-weight:700;
+
+    margin-bottom:1.5rem;
+
+}
+
+.hero-container p{
+
+    font-size:1.1rem;
+
+    color:rgba(255,255,255,.9);
+
+    margin-bottom:2rem;
+
+    max-width:600px;
+
+}
+
+
+.hero-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-order-btn{
+
+    background:var(--secondary);
+
+    color:var(--white);
+
+    padding:1rem 2.3rem;
+
+    border-radius:999px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.hero-order-btn:hover{
+
+    background:var(--secondary-light);
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(245,158,11,.35);
+
+}
+
+.hero-order-btn:disabled{
+
+    background:#b9b9b9;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+
+/* ==========================================
+   04. FEATURED MEALS
+========================================== */
+
+.featured-meals{
+
+    background:var(--background);
+
+}
+
+.meals{
+
+    width:min(1200px,100%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:2rem;
+
+}
+
+.card{
+
+    background:var(--white);
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.card-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.card-image img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.card:hover .card-image img{
+
+    transform:scale(1.08);
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:#dc2626;
+
+    color:white;
+
+    padding:.45rem .9rem;
+
+    border-radius:999px;
+
+    font-size:.75rem;
+
+    font-weight:600;
+
+}
+
+.card-content{
+
+    flex:1;
+
+    padding:1.5rem;
+
+}
+
+.card-content h3{
+
+    font-size:1.35rem;
+
+    margin-bottom:.75rem;
+
+}
+
+.card-content p{
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+
+}
+
+.card-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1.5rem;
+
+    border-top:1px solid var(--border);
+
+}
+
+.price{
+
+    color:var(--primary);
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+}
+
+.meal-order-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:.85rem 1.4rem;
+
+    border-radius:999px;
+
+    transition:var(--transition);
+
+}
+
+.meal-order-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.featured-btn{
+
+    margin-top:4rem;
+
+    text-align:center;
+
+}
+
+.view-menu-btn{
+
+    padding:1rem 2rem;
+
+    background:var(--primary);
+
+    color:white;
+
+    border-radius:999px;
+
+    display:inline-block;
+
+    transition:var(--transition);
+
+}
+
+.view-menu-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+
+
+/* ==========================================
+   05. WHY CHOOSE US
+========================================== */
+
+.why-us{
+
+    background:#fff;
+
+}
+
+.features{
+
+    width:min(1200px,100%);
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:2rem;
+
+}
+
+.feature-card{
+
+    background:#fff;
+
+    padding:2.5rem 2rem;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.feature-icon{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 1.5rem;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2.2rem;
+
+    background:rgba(46,139,87,.1);
+
+    border-radius:50%;
+
+}
+
+.feature-card h3{
+
+    margin-bottom:1rem;
+
+    font-size:1.35rem;
+
+}
+
+.feature-card p{
+
+    color:var(--text-light);
+
+    font-size:.95rem;
+
+}
+
+
+/* ==========================================
+   06. CATEGORIES
+========================================== */
+
+.categories{
+
+    background:var(--background);
+
+}
+
+.category-container{
+
+    width:min(1200px,100%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:2rem;
+
+}
+
+.category-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    cursor:pointer;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.category-card img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.category-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.category-card h3{
+
+    padding:1.5rem;
+
+    text-align:center;
+
+    font-size:1.3rem;
+
+}
+
+
+/* ==========================================
+   07. TESTIMONIALS
+========================================== */
+
+.testimonials{
+
+    background:#fff;
+
+}
+
+.testimonial-container{
+
+    width:min(1200px,100%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:2rem;
+
+}
+
+.testimonial{
+
+    background:#fff;
+
+    padding:2rem;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    position:relative;
+
+}
+
+.testimonial:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.testimonial::before{
+
+    content:"“";
+
+    position:absolute;
+
+    top:15px;
+
+    left:20px;
+
+    font-size:5rem;
+
+    color:rgba(46,139,87,.15);
+
+    font-family:serif;
+
+    line-height:1;
+
+}
+
+.testimonial p{
+
+    margin:2rem 0 1.5rem;
+
+    color:var(--text-light);
+
+    font-style:italic;
+
+}
+
+.testimonial h4{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   08. CALL TO ACTION
+========================================== */
+
+.cta{
+
+    text-align:center;
+
+    background:linear-gradient(rgba(46,139,87,.95),rgba(34,107,67,.95));
+
+    color:#fff;
+
+    border-radius:30px;
+
+    width:min(1200px,92%);
+
+    margin:6rem auto;
+
+}
+
+.cta h2{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    margin-bottom:1rem;
+
+}
+
+.cta p{
+
+    max-width:650px;
+
+    margin:0 auto 2rem;
+
+    opacity:.9;
+
+}
+
+.cta-btn{
+
+    display:inline-block;
+
+    background:var(--secondary);
+
+    color:#fff;
+
+    padding:1rem 2rem;
+
+    border-radius:999px;
+
+    transition:var(--transition);
+
+}
+
+.cta-btn:hover{
+
+    background:var(--secondary-light);
+
+    transform:translateY(-4px);
+
+}
+
+
+

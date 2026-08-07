@@ -1,0 +1,147 @@
+@media(max-width:768px){
+
+    section{
+
+        padding:4rem 1.5rem;
+
+    }
+
+    .nav-bar{
+
+        min-height:70px;
+
+    }
+
+    .order-btn{
+
+        display:none;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+    .nav-list-items{
+
+        position:fixed;
+
+        top:70px;
+        right:-100%;
+
+        width:260px;
+
+        height:calc(100vh - 70px);
+
+        background:var(--primary);
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        padding-top:3rem;
+
+        gap:2rem;
+
+        transition:.4s ease;
+
+    }
+
+    .nav-list-items.active{
+
+        right:0;
+
+    }
+
+    .hero-section{
+
+        min-height:75vh;
+
+        justify-content:center;
+
+        text-align:center;
+
+        padding:2rem;
+
+    }
+
+    .hero-container{
+
+        margin:auto;
+
+    }
+
+    .hero-container h1{
+
+        font-size:2.8rem;
+
+    }
+
+    .hero-container p{
+
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-order-btn{
+
+        width:100%;
+
+    }
+
+    .meals{
+
+        grid-template-columns:1fr;
+
+    }
+
+     .features{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .category-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+     .testimonial-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cta{
+
+        border-radius:20px;
+
+        padding:4rem 1.5rem;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-container ul{
+
+        align-items:center;
+
+    }
+
+
+}

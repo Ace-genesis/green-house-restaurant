@@ -1,0 +1,603 @@
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root{
+
+    --primary:#2E8B57;
+    --primary-dark:#226b43;
+
+    --secondary:#F59E0B;
+    --secondary-light:#FBBF24;
+
+    --white:#FFFFFF;
+    --background:#F7F8FA;
+
+    --text:#1F2937;
+    --text-light:#6B7280;
+
+    --border:#E5E7EB;
+
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+    --shadow-lg:0 18px 40px rgba(0,0,0,.15);
+
+    --transition:.35s ease;
+
+    --radius-sm:8px;
+    --radius-md:15px;
+    --radius-lg:25px;
+
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+    width:min(1200px,90%);
+
+    margin:auto;
+
+}
+
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+
+    padding:6rem 6%;
+
+}
+
+/* ===========================
+   SECTION HEADING
+=========================== */
+
+.section-heading{
+
+    max-width:650px;
+
+    margin:0 auto 4rem;
+
+    text-align:center;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    background:rgba(46,139,87,.12);
+
+    color:var(--primary);
+
+    padding:.45rem 1rem;
+
+    border-radius:999px;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+    margin-bottom:1rem;
+
+}
+
+.section-heading h2{
+
+    font-size:clamp(2rem,4vw,3rem);
+
+    margin-bottom:1rem;
+
+    color:var(--text);
+
+}
+
+.section-heading p{
+
+    color:var(--text-light);
+
+    font-size:1rem;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button,
+.cta-btn,
+.view-menu-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:1rem 2rem;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+button:hover,
+.cta-btn:hover,
+.view-menu-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+.hero-order-btn,
+.order-btn,
+.meal-order-btn,
+.cta-btn{
+
+    background:var(--secondary);
+
+    color:var(--white);
+
+}
+
+.hero-order-btn:hover,
+.order-btn:hover,
+.meal-order-btn:hover,
+.cta-btn:hover{
+
+    background:var(--secondary-light);
+
+    box-shadow:0 10px 25px rgba(245,158,11,.35);
+
+}
+
+.view-menu-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.view-menu-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card,
+.feature-card,
+.category-card,
+.testimonial{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.card:hover,
+.feature-card:hover,
+.category-card:hover,
+.testimonial:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-container,
+.card,
+.feature-card,
+.category-card,
+.testimonial{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+   02. HEADER & NAVIGATION
+========================================== */
+
+header{
+
+    position:sticky;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    background:rgba(46,139,87,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+
+}
+
+.nav-bar{
+
+    width:min(1200px,92%);
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    min-height:80px;
+
+}
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.8rem;
+
+}
+
+#green-house-logo{
+
+    width:55px;
+    height:55px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+.logo h2{
+
+    color:var(--white);
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+}
+
+
+.nav-list-items{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:2rem;
+
+}
+
+
+.nav-list-items a{
+
+    position:relative;
+
+    color:var(--white);
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+}
+
+.nav-list-items a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    transition:var(--transition);
+
+}
+
+
+.nav-list-items a:hover::after,
+.nav-list-items a.active::after{
+
+    width:100%;
+
+}
+
+
+.nav-list-items a.active{
+
+    color:var(--secondary-light);
+
+}
+
+
+.order-btn{
+
+    background:var(--secondary);
+
+    color:var(--white);
+
+    padding:.9rem 1.7rem;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+}
+
+.order-btn:hover{
+
+    background:var(--secondary-light);
+
+}
+
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+}
+
+
+.menu-toggle span{
+
+    display:block;
+
+    width:28px;
+
+    height:3px;
+
+    margin:5px 0;
+
+    background:var(--white);
+
+    border-radius:50px;
+
+    transition:var(--transition);
+
+}
+
+.menu-toggle.active span:nth-child(1){
+
+    transform:translateY(8px) rotate(45deg);
+
+}
+
+.menu-toggle.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+.menu-toggle.active span:nth-child(3){
+
+    transform:translateY(-8px) rotate(-45deg);
+
+}
+
+
+/* ==========================================
+   09. FOOTER
+========================================== */
+
+footer{
+
+    background:#111827;
+
+    color:#d1d5db;
+
+    padding:5rem 6% 2rem;
+
+}
+
+.footer-container{
+
+    width:min(1200px,100%);
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:3rem;
+
+}
+
+.footer-container h3{
+
+    color:#fff;
+
+    margin-bottom:1.2rem;
+
+    font-size:1.3rem;
+
+}
+
+.footer-container p{
+
+    margin-bottom:.8rem;
+
+    line-height:1.8;
+
+}
+
+.footer-container ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:.8rem;
+
+}
+
+.footer-container a{
+
+    color:#d1d5db;
+
+    transition:var(--transition);
+
+}
+
+.footer-container a:hover{
+
+    color:var(--secondary);
+
+    padding-left:6px;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    margin-top:4rem;
+
+    padding-top:2rem;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    font-size:.9rem;
+
+}
