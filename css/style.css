@@ -82,6 +82,13 @@ a{
 
 }
 
+a:link,
+a:visited{
+
+    color:inherit;
+
+}
+
 ul{
 
     list-style:none;
