@@ -9,6 +9,8 @@ async function getHeader(){
     headerContainer.innerHTML = data
 
     retrieveElements()
+
+    setActiveLink()
 }
 
 async function getFooter(){
@@ -28,6 +30,28 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active')
     navList.classList.toggle('active')
 })
+}
+
+function setActiveLink(){
+
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+    const navLinks = document.querySelectorAll(".nav-list-items a");
+
+    navLinks.forEach(link => {
+
+        const href = link.getAttribute("href");
+
+        const page = href.split("/").pop();
+
+        if(page === currentPage){
+
+            link.classList.add("active");
+
+        }
+
+    });
+
 }
 
 getHeader()
